@@ -1,0 +1,53 @@
+.time-spent-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+.time-spent-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.time-bubble {
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-size: 1em;
+}
+
+.big {
+    width: 100px;
+    height: 100px;
+    background-color: #7986cb;
+}
+
+.medium {
+    width: 80px;
+    height: 80px;
+    background-color: #7986cb;
+}
+
+.small {
+    width: 60px;
+    height: 60px;
+    background-color: #7986cb;
+}
+
+.time-refresh {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}

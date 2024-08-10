@@ -1,0 +1,32 @@
+/* completedTasks.css */
+.task-box.completed {
+    border-right: 5px solid #28a745; /* Green right border */
+}
+
+/* yetToDoTasks.css */
+.task-box.yet-to-do {
+    border-right: 5px solid #ffc107; /* Yellow right border */
+}
+
+/* pendingTasks.css */
+.task-box.pending {
+    border-right: 5px solid #dc3545; /* Red right border */
+}
+.task-status {
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Status color classes */
+.task-status.completed {
+    color: #27ae60; /* Green for Completed */
+}
+
+.task-status.yet-to-do {
+    color: #f39c12; /* Yellow for Yet to Do */
+}
+
+.task-status.pending {
+    color: #e74c3c; /* Red for Pending */
+}
+

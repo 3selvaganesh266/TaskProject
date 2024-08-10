@@ -1,0 +1,6 @@
+/* src/Assets/Styles/CompletedTasks.css */
+
+.task-box.completed {
+    margin-bottom: 400px;
+    border-right: 5px solid #28a745; /* Green right border */
+}

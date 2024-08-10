@@ -1,0 +1,100 @@
+.navbar {
+    color: rgb(65, 18, 237);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.9); 
+}
+
+.navbar .title {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .title .logo-image {
+
+    width: 220px;
+    height: 70px;
+    margin-right: 1px;
+    margin-top: 1px; 
+
+}
+
+.navbar .nav-items {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-items li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.navbar .nav-items li a {
+    color: rgb(65, 18, 237);
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.navbar .nav-items li a:hover {
+    background-color: #14bae8;
+    border-radius: 4px;
+}
+
+.navbar .nav-items .profile-image {
+    width: 30px; /* Set a fixed width */
+    height: 30px; /* Set a fixed height */
+    border-radius: 50%; /* Make it round */
+    object-fit: cover; /* Ensure the image covers the circle */
+    margin-top: 20px;
+}
+
+.navbar .nav-items .premium-link {
+    background-color: #109de4;
+    color: white;
+    border-radius: 13px;
+    padding: 8px 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-items {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar .nav-items li {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .navbar .nav-items li a {
+        width: 100%;
+    }
+}
+.logout-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.logout-button:hover {
+  color: #f00; /* Change the color when hovering over the logout icon */
+}

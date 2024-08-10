@@ -1,0 +1,187 @@
+.project-details-container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    padding: 20px;
+    color: #ecf0f1;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0; /* Remove extra space between greeting and list */
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li:hover {
+    background-color: #146cc4;
+}
+
+/* Specific margin-top adjustments for sidebar items */
+.total-projects,
+.completed-projects,
+.yet-to-do-projects,
+.pending-projects {
+    margin-top: 0; /* Remove margin for sidebar items */
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the top */
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #ecf0f1;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start; /* Align project boxes to the top */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 0; /* Remove extra margin-top */
+}
+
+.project-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(8, 193, 206, 0.1);
+    cursor: pointer;
+    width: calc(33.333% - 20px); 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(8, 193, 206, 0.2);
+    background-color: #ecf0f1;
+}
+
+.project-box.completed:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 6px 12px rgba(39, 174, 96, 0.3) !important;
+    background-color: #ecf0f1 !important;
+}
+
+
+.project-box.completed:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(39, 174, 96, 0.3);
+}
+
+.project-box h3 {
+    margin-top: 0;
+}
+
+.project-status {
+    text-align: right;
+    font-weight: bold;
+}
+
+.project-status.completed {
+    color: #28a745; /* Green text for completed */
+}
+
+.project-status.yet-to-do {
+    color: #ffc107; /* Yellow text for yet to do */
+}
+
+.project-status.pending {
+    color: #dc3545; /* Red text for pending */
+}
+.project-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background-color:ecf0f1; /* Light grey background */
+}
+
+.project-form {
+    background-color: #ffffff; /* White background for the form */
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%;
+    max-width: 500px; /* Maximum width of the form */
+}
+
+.project-form h3 {
+    margin-top: 0;
+    text-align: center;
+    color: #333; /* Dark text color */
+    font-size: 24px; /* Larger heading */
+}
+
+.project-form label {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    color: #555; /* Medium text color for labels */
+    font-size: 16px; /* Consistent font size */
+}
+
+.project-form input,
+.project-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 16px; /* Larger input text */
+    background-color: #fafafa; /* Slightly off-white background */
+    transition: border-color 0.3s ease;
+}
+
+.project-form input:focus,
+.project-form select:focus {
+    border-color: #3498db; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.project-form button {
+    background-color: #2ecc71; /* Green button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full-width button */
+    font-size: 18px; /* Larger button text */
+    margin-top: 20px; /* Add margin to create space above the button */
+}
+
+.project-form button:hover {
+    background-color: #27ae60;
+}

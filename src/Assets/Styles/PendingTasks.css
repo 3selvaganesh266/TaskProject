@@ -1,0 +1,6 @@
+/* src/Assets/Styles/PendingTasks.css */
+
+.task-box.pending {
+    margin-bottom: 400px;
+    border-right: 5px solid #dc3545; /* Red right border */
+}

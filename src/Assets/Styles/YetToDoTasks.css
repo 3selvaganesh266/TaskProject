@@ -1,0 +1,6 @@
+/* src/Assets/Styles/YetToDoTasks.css */
+
+.task-box.yet-to-do {
+    margin-bottom: 400px;
+    border-right: 5px solid #ffc107; /* Yellow right border */
+}

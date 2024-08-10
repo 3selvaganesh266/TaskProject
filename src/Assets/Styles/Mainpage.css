@@ -1,0 +1,77 @@
+.mainpage-container {
+    width: 100%;
+    padding: 20px;
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.welcome-box {
+    width: 100%;
+    background-color: rgb(66, 11, 216);
+    color: white;
+    text-align: center;
+    padding: 40px; 
+    border-radius: 8px; 
+    margin-bottom: 100px; 
+}
+
+.welcome-box .welcome-text {
+    font-size: 2em;
+    margin: 0;
+}
+
+.welcome-box .username-text {
+    font-size: 1.5em;
+}
+
+.welcome-box h6 {
+    font-size: 1em;
+    margin: 0;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 90px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 30%;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-logo {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.card-header {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    color: #666;
+}
+
+.contributions-container {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 40px;
+}
